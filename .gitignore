@@ -10,7 +10,6 @@
 **/.mypy_cache
 **/.pytest_cache
 **/.tox
-**/.vscode
 **/*.egg-info
 **/*.log
 **/*.pyc
@@ -19,3 +18,4 @@
 **/*.sqlite
 **/*.sqlite3
 /.venv
+/.vscode
