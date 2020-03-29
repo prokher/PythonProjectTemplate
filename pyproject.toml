@@ -1,20 +1,26 @@
 # Python project configuration.
 
+# File format is STANDARDIZED in the PEP 518:
+# https://www.python.org/dev/peps/pep-0518/
+
+
+# --------------------------------------------------------- BUILD-SYSTEM
 [build-system]
 requires = ["poetry>=0.12"]
 build-backend = "poetry.masonry.api"
 
+# --------------------------------------------------------------- POETRY
+# Python packaging and dependency management.
+# Docs: https://python-poetry.org/docs/
 [tool.poetry]
 name = "PythonProjectTemplate"
 version = "0.1.0"
 description = "Python project template by Prokher."
 authors = ["Alexander A. Prokhorov <prokher@gmail.com>"]
 license = "MIT"
-
 [tool.poetry.dependencies]
 # Version syntax: https://python-poetry.org/docs/versions/
-python = "^3.6.1"
-
+python = ">=3.6.1, <4"
 [tool.poetry.dev-dependencies]
 # Development dependencies. Python packages needed for development.
 # Installed when you run `poetry install`.
@@ -23,7 +29,7 @@ black = { version = ">=19.10b0", allow-prereleases = true }
 cookiecutter = ">=1.7.0"
 coverage = ">=5.0.4"
 ipython = "*"
-isort = {version = "*", extras = ["pyproject"]}
+isort = {version = ">=4.3.21", extras = ["pyproject"]}
 mypy = ">=0.770"
 pre-commit = ">=2.2.0"
 pydocstyle = ">=5.0.2"
