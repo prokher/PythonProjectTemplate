@@ -18,7 +18,7 @@
 2. Create local virtualenv in `.venv`, install all project dependencies
    (from `pyproject.toml`), and upgrade pip:
    ```bash
-   $ poetry install --no-root && poetry run pip install --upgrade pip
+   $ poetry install && poetry run pip install --upgrade pip
    ```
 3. Run tests:
    ```bash
