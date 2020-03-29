@@ -1,0 +1,21 @@
+# Gitignore - specifies intentionally untracked files to ignore.
+# Docs: https://git-scm.com/docs/gitignore
+
+.DS_Store
+**/__pycache__
+**/.cache
+**/.coverage*
+**/.egg-info
+**/.eggs
+**/.mypy_cache
+**/.pytest_cache
+**/.tox
+**/.vscode
+**/*.egg-info
+**/*.log
+**/*.pyc
+**/*.pyd
+**/*.pyo
+**/*.sqlite
+**/*.sqlite3
+/.venv
