@@ -1,0 +1,67 @@
+// VS Code configuration.
+// https://code.visualstudio.com/docs/getstarted/settings
+
+{
+    // General VS Code settings.
+    // https://code.visualstudio.com/docs/getstarted/settings#_default-settings
+    "editor.rulers": [72, 88],
+    "editor.tabSize": 4,
+    "git.ignoreLimitWarning": true,
+
+    // Python-related settings.
+    // https://code.visualstudio.com/docs/python/settings-reference
+    "python.formatting.provider": "black",
+    "python.linting.mypyEnabled": true,
+    "python.linting.pydocstyleEnabled": true,
+    "python.linting.pylintEnabled": true,
+    "python.linting.pylintUseMinimalCheckers": false,
+    "python.pythonPath": "${workspaceFolder}/.venv/bin/python",
+    // Isort treats paths relative to the current working directory, so
+    // if you run it not from the directory `.venv` resides it will not
+    // be able to properly detect thirdparty modules. Here is the bug
+    // report: https://github.com/timothycrosley/isort/issues/659.
+    // Current workaround is to provide `--virtual-env` from the command
+    // line.
+    "python.sortImports.args": ["--virtual-env", "${workspaceFolder}/.venv"],
+    "python.testing.autoTestDiscoverOnSaveEnabled": true,
+    "python.testing.nosetestsEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "python.testing.unittestEnabled": false,
+
+    // Code Spell Checker
+    // https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker
+    "cSpell.enabled": true,
+    "cSpell.version": "0.1",
+    "cSpell.allowCompoundWords": true,
+    "cSpell.words": [
+        "aiohttp",
+        "asdict",
+        "asgi",
+        "asgiref",
+        "asyncio",
+        "choco",
+        "dedent",
+        "deserialization",
+        "envlist",
+        "graphiql",
+        "graphql",
+        "inmemory",
+        "ipython",
+        "iscoroutinefunction",
+        "isfunction",
+        "isort",
+        "itertools",
+        "kwds",
+        "lgpl",
+        "mutex",
+        "mypy",
+        "pydocstyle",
+        "pylint",
+        "pypi",
+        "pyproject",
+        "pytest",
+        "testenv",
+        "venv",
+        "xfail"
+    ]
+}

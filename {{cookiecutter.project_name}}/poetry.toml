@@ -1,0 +1,8 @@
+# Poetry local (for the current project) configuration file.
+# Docs: https://python-poetry.org/docs/configuration/
+
+[virtualenvs]
+# Make Poetry create virtualenvs in the project directory, so all other
+# tools can easily find it. In particular VS Code will easily find and
+# use this virtualenv.
+in-project = true
