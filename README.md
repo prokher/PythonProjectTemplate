@@ -40,6 +40,10 @@ very well.
 ```bash
 $ pip install cookiecutter
 $ cookiecutter gh:prokher/PythonProjectTemplate
+$ cd <NewProject>
+$ poetry install
+$ poetry run pytest
+$ code .
 ```
 
 ![quickstart.gif](quickstart.gif)
