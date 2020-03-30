@@ -20,12 +20,34 @@ structured folders and files) I recommend to take a look at the
 Cookiecutter. The usage is indeed straightforward and it does its job
 very well.
 
+## Features
+
+- [Poetry](https://python-poetry.org) package and dependency manager.
+- [Pytest](https://pytest.org) testing framework.
+- [Black](https://black.readthedocs.io/en/stable/) code formatter.
+- [isort](https://github.com/timothycrosley/isort) import formatter.
+- [MyPy](http://mypy-lang.org) type checker.
+- [Pylint](https://www.pylint.org) code checker.
+- [Pydocstyle](http://www.pydocstyle.org/) docstrings checher.
+- [Visual Studio Code](https://code.visualstudio.com).
+- Test
+  [test_linters.py]({{cookiecutter.project_name}}/tests/test_linters.py)
+  runs linters (MyPy, Pylint) and check code style (Black, Isort,
+  Pydocstyle).
+
 ## Quick start
 
 ```bash
 $ pip install cookiecutter
 $ cookiecutter gh:prokher/PythonProjectTemplate
 ```
+
+![quickstart.gif](quickstart.gif)
+
+Congratulations, you have working Python project. Read its `README.md`
+to see how to setup your development environment properly. I also
+recommend reading generated configuration files `pyproject.toml` and
+`setup.cfg` to check if they match your needs.
 
 ## Feedback
 
@@ -51,6 +73,10 @@ up-to-date and kind of modern.
    ```bash
    $ poetry install && poetry run pip install --upgrade pip
    ```
+
+## TODO
+
+- [pre-commit](https://pre-commit.com) check code formatting on commit.
 
 ## License
 
