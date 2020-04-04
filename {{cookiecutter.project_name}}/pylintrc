@@ -38,7 +38,7 @@ variable-rgx = [a-z_][a-z0-9_]{1,64}$
 [FORMAT]
 max-line-length=88
 max-module-lines=9000 # Right, over nine thousand!
-[STRING QUOTES]
+[STRING_QUOTES]
 docstring-quote = double
 string-quote = double-avoid-escape
 triple-quote = double
