@@ -15,7 +15,6 @@
     "python.linting.pydocstyleEnabled": true,
     "python.linting.pylintEnabled": true,
     "python.linting.pylintUseMinimalCheckers": false,
-    "python.pythonPath": "${workspaceFolder}/.venv/bin/python",
     // Isort treats paths relative to the current working directory, so
     // if you run it not from the directory `.venv` resides it will not
     // be able to properly detect thirdparty modules. Here is the bug

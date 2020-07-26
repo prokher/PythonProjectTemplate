@@ -9,11 +9,11 @@ def test_project_directories(cookies):
 
     expected_files = {
         ".gitignore",
+        ".python-version",
         ".vscode",
         ".vscode/extensions.json",
         ".vscode/settings.json",
         "poetry.toml",
-        "pylintrc",
         "pyproject.toml",
         "README.md",
         "setup.cfg",
