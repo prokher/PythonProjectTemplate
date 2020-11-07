@@ -1,15 +1,15 @@
 # Python project template by Prokher
 
-Python project template carefully baked by Prokher for personal use. If
-you find it useful - you are welcome to use it as well.
+A Python project template is carefully baked by Prokher for personal
+use. If you find it useful - you are welcome to use it as well.
 
 This template is intended to automate Python project bootstrapping. At
 the same time, you will not find scripts or commands for all possible
-configuration management cases here. I think software engineer must
+configuration management cases here. I think software engineers must
 understand how tooling works and must be able to configure tools he
 works with. So the target use-case is the following: you start with this
-template, get working Python project, and then tune the results to
-satisfy you project needs. To help with this I thoroughly commended all
+template, get a working Python project, and then tune the results to
+satisfy your project needs. To help with this I thoroughly commended all
 the configuration files and left links to the relevant parts of the
 documentation everywhere possible. Enjoy.
 
