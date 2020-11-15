@@ -7,10 +7,17 @@ import subprocess
 
 
 def test_bootstrap(cookies):
-    """Test main bootsrap sequence: `poetry install` + `pytest`."""
+    """Test bootsrap sequence.
 
+    1. `poetry install`
+    2. `pytest`
+    3. `python -m package_name`.
+
+    """
     # Deploy template using default.
-    bake_result = cookies.bake(template=str(pathlib.Path(__file__).parent.parent),)
+    bake_result = cookies.bake(
+        template=str(pathlib.Path(__file__).parent.parent),
+    )
     assert bake_result.exit_code == 0, "Baking failed!"
     assert bake_result.exception is None, "Baking failed!"
 
@@ -25,6 +32,12 @@ def test_bootstrap(cookies):
             ["poetry", "run", "pip", "install", "--upgrade", "pip"], env=env
         )
         subprocess.check_call(["poetry", "run", "pytest"], env=env)
+        subprocess.check_call(
+            ["poetry", "run", "python", "-m", "super_project"], env=env
+        )
+        subprocess.check_call(
+            ["poetry", "run", "python", "-m", "super_project", "hello-world"], env=env
+        )
 
 
 @contextlib.contextmanager

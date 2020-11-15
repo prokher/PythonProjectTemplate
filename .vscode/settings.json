@@ -60,6 +60,7 @@
         "pypi",
         "pyproject",
         "pytest",
+        "pythonic",
         "testenv",
         "venv",
         "virtualenv",

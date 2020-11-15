@@ -30,6 +30,7 @@ packages = [
 # Production dependencies. Python packages installed when this package
 # installs, e.g. on `pip install {{cookiecutter.pypi_project_name}}`.
 # Version syntax: https://python-poetry.org/docs/versions/
+invoke = ">=1.4.1"
 python = ">=3.6.1, <4"
 [tool.poetry.dev-dependencies]
 # Development dependencies. Python packages needed for development.

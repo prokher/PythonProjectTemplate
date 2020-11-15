@@ -24,6 +24,7 @@ recommend reading generated configuration files `pyproject.toml` and
 ## Features
 
 - [Poetry](https://python-poetry.org) package and dependency manager.
+- [Invoke](http://www.pyinvoke.org) to handle CLI and execute tasks.
 - [Pytest](https://pytest.org) testing framework.
 - [Black](https://black.readthedocs.io/en/stable/) code formatter.
 - [isort](https://github.com/timothycrosley/isort) import formatter.
