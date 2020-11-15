@@ -24,8 +24,8 @@
    ```bash
    $ poetry install && poetry run pip install --upgrade pip
    ```
-11. Run tests:
+5. Run tests:
    ```bash
    $ pytest
    ```
-12. Open project directory in the VS Code and follow recommendations.
+6. Open project directory in the VS Code and follow recommendations.
