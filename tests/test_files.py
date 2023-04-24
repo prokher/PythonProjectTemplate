@@ -16,7 +16,6 @@ def test_project_directories(cookies):
         "poetry.toml",
         "pyproject.toml",
         "README.md",
-        "setup.cfg",
         "test_stuff",
         "test_stuff/__init__.py",
         "test_stuff/__main__.py",

@@ -27,7 +27,7 @@ recommend reading generated configuration files `pyproject.toml` and
 - [Invoke](http://www.pyinvoke.org) to handle CLI and execute tasks.
 - [Pytest](https://pytest.org) testing framework.
 - [Black](https://black.readthedocs.io/en/stable/) code formatter.
-- [isort](https://github.com/timothycrosley/isort) import formatter.
+- [Isort](https://github.com/timothycrosley/isort) import formatter.
 - [MyPy](http://mypy-lang.org) type checker.
 - [Pylint](https://www.pylint.org) code checker.
 - [Pydocstyle](http://www.pydocstyle.org/) docstrings checher.
